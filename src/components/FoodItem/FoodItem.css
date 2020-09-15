@@ -1,0 +1,18 @@
+.food_item{
+    padding: 15px;
+    border-radius: 15px;
+    margin-top: 20px;
+    transition: .3s all ease-in-out;
+}
+.food_item:hover{
+    box-shadow: 0 0 30px grey;
+}
+.food_item img{
+    width: 250px;
+}
+.food_item p,h6{
+    margin: 0;
+}
+.food_item p{
+    color: grey;
+}

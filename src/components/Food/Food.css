@@ -1,0 +1,10 @@
+.food_nav{
+    font-weight: 700;
+}
+.food_nav .item{
+    color: black;
+    transition: .2s all ease-in-out;
+}
+.food_nav .item:hover{
+    color: crimson;
+}
