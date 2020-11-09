@@ -11,6 +11,7 @@ import Lunch from './components/Lunch/Lunch';
 import Dinner from './components/Dinner/Dinner';
 import Breakfast from './components/Breakfast/Breakfast';
 import NotFound from './components/NotFound/NotFound';
+import FoodDetails from './components/FoodDetails/FoodDetails';
 
 function App() {
   return (
@@ -27,6 +28,9 @@ function App() {
         </Route>
         <Route path="/breakfast">
           <Breakfast></Breakfast>
+        </Route>
+        <Route path="/food-details/:foodID">
+          <FoodDetails></FoodDetails>
         </Route>
         <Route path="*">
           <NotFound></NotFound>

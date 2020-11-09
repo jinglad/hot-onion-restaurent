@@ -4,14 +4,14 @@ import FoodItem from '../FoodItem/FoodItem';
 
 const Lunch = () => {
     const lunchFoods = fakeFood.filter((food) => food.category === "lunch");
-    // console.log(lunchFoods);
+    console.log(lunchFoods);
     // const temp = fakeFood;
     // console.log(temp.category);
     return (
         <div className="container">
             <div className="row">
                 {
-                    lunchFoods.map(food => <FoodItem food={food}></FoodItem>)
+                    lunchFoods.map(food => <FoodItem key={food.id} food={food}></FoodItem>)
                 }
             </div>
         </div>

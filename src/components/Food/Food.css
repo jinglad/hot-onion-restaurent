@@ -3,8 +3,18 @@
 }
 .food_nav .item{
     color: black;
-    transition: .2s all ease-in-out;
+    text-decoration: none;
+    display: inline;
+    margin: 0 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s all ease-in-out;
 }
 .food_nav .item:hover{
     color: crimson;
+    border-bottom: 2px solid crimson;
+}
+.active{
+    color: crimson!important;
+    border-bottom: 2px solid crimson!important;
 }
