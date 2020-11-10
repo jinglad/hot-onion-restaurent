@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
-import Breakfast from '../Breakfast/Breakfast';
-import Dinner from '../Dinner/Dinner';
-import Lunch from '../Lunch/Lunch';
+import SingleFoodItem from '../SingleFoodItem/SingleFoodItem';
 import './Food.css';
 
 const Food = () => {
@@ -20,13 +18,13 @@ const Food = () => {
             </div>
             <div className="my-5">
                 {
-                    food === "lunch" && <Lunch></Lunch>
+                    food === "lunch" && <SingleFoodItem food={food}></SingleFoodItem>
                 }
                 {
-                    food === "breakfast" && <Breakfast></Breakfast>
+                    food === "breakfast" && <SingleFoodItem food={food}></SingleFoodItem>
                 }
                 {
-                    food === "dinner" && <Dinner></Dinner>
+                    food === "dinner" && <SingleFoodItem food={food}></SingleFoodItem>
                 }
             </div>
         </div>

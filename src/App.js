@@ -7,9 +7,6 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
-import Lunch from './components/Lunch/Lunch';
-import Dinner from './components/Dinner/Dinner';
-import Breakfast from './components/Breakfast/Breakfast';
 import NotFound from './components/NotFound/NotFound';
 import FoodDetails from './components/FoodDetails/FoodDetails';
 
@@ -19,15 +16,6 @@ function App() {
       <Switch>
         <Route exact path="/">
           <Home></Home>
-        </Route>
-        <Route path="/lunch">
-          <Lunch></Lunch>
-        </Route>
-        <Route path="/dinner">
-          <Dinner></Dinner>
-        </Route>
-        <Route path="/breakfast">
-          <Breakfast></Breakfast>
         </Route>
         <Route path="/food-details/:foodID">
           <FoodDetails></FoodDetails>

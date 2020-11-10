@@ -7,9 +7,6 @@
 .food_item:hover{
     box-shadow: 0 0 30px grey;
 }
-.food_item img{
-    width: 250px;
-}
 .food_item p,h6{
     margin: 0;
 }

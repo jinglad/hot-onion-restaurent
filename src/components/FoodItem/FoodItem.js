@@ -8,7 +8,7 @@ const FoodItem = (props) => {
         <div className="col-md-4">
             <Link className="text-decoration-none text-dark" to={"/food-details/" + id}>
                 <div className="food_item text-center">
-                    <img src={img} className="img-fluid" alt="" />
+                    <img src={img} className="w-75" alt="" />
                     <div className="mt-3">
                         <h6>{title}</h6>
                         <p><small>{shortDescription}</small></p>
